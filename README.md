@@ -1,6 +1,7 @@
 # HW 0.5 for Dr. Ericson, by Justin Haddock
 
-This repo does not come with binaries, as per typical submission policies.
+This repo does not come with binaries, as per typical submission policies. Please inform me if you desired otherwise.
+This repo contains corrections for problems: 1, 2, 3, and 5. I did not feel the need to complete 4.
 
 Here is the make commands required for compilation:
 
