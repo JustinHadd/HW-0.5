@@ -1,3 +1,12 @@
+/**
+ * @file p2p3.cpp
+ * @author Justin Haddock
+ * @date 2024-09-13
+ * @brief Takes integer data and writes into an array, of which the size is user-inputed.
+ * 
+ * Takes int.txt and reads as many integers as desired by the user (no greater than 1000).
+ */
+
 #include <iostream>
 #include <fstream>
 
@@ -5,10 +14,43 @@ using namespace std;
 
 const int MAX_ARRAY = 1000;
 
+
+/**
+ * Reads a file and writes into arr
+ *
+ * @param int arr[] The array storing the file data
+ * @param int arrSize user-defined array size
+ * @pre user input for arrSize
+ * @return void 
+ * @post printArr
+ * 
+ */
 void readFile(int arr[], int arrSize);
 
+
+/**
+ * Prints the data stored in arr
+ *
+ * @param int arr[] The array storing the data
+ * @param int arrSize User-defined array size
+ * @pre readFile
+ * @return void 
+ * @post printAvg
+ * 
+ */
 void printArr(int arr[], int arrSize); 
 
+
+/**
+ * Prints the average value of all data in arr
+ *
+ * @param int arr[] The arr storing the data
+ * @param int arrSize User-defined array size
+ * @pre printArr
+ * @return float The average
+ * @post program end
+ * 
+ */
 float printAvg(int arr[], int arrSize);
 
 int main() {
@@ -21,7 +63,7 @@ int main() {
     cout << "Invaild size. The limit is 1000. ";
     cin >> arrSize;
   }
-
+  // Problem 2 correction
   int* arr = new int[arrSize];
   
   readFile(arr, arrSize);
@@ -29,7 +71,7 @@ int main() {
   printArr(arr, arrSize);
   cout << "Average: " << endl;
   cout << printAvg(arr, arrSize);
-
+  // Problem 3 correction
   delete[] arr;
 }
 

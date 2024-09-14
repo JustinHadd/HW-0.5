@@ -15,7 +15,5 @@ two: p2p3.o
 p2p3.o: p2p3.cpp
 	$(CC) $(CFLAGS) -c p2p3.cpp
 
-#three
-
 clean:
 	$(RM) *.o *~ *.exe one two three
